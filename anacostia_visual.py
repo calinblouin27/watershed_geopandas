@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 
 
 # Import shapefiles
-watershed = gpd.read_file('C:/Users/cblou/geopandas/Watersheds.shp')
-waterbodies = gpd.read_file('C:/Users/cblou/geopandas/Waterbodies.shp')
+watershed = gpd.read_file('shaefiles/Watersheds.shp')
+waterbodies = gpd.read_file('shapefiles/Waterbodies.shp')
 
 #isolate Anacostia watershed from all other watersheds in district
 anacostia = watershed[watershed.NAME == 'Washington Metropolitan']
